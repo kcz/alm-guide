@@ -1,0 +1,12 @@
+{
+  "Username": "tester@kcz.e",
+  "LastName": "Tester",
+  "Email": "tester@kcz.e",
+  "Alias": "tester",
+  "TimeZoneSidKEy": "Asia/Shanghai",
+  "LocaleSidKey": "en_US",
+  "EmailEncodingKey": "UTF-8",
+  "LanguageLocaleKey": "en_US",
+  "profileName": "Standard Platform User",
+  "generatePassword": true
+}

@@ -1,0 +1,38 @@
+{
+    "packageDirectories": [
+        {
+            "path": "firstCoursePackage",
+            "default": true,
+            "package": "FirstCoursePackage",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        },
+        {
+            "path": "layoutPackage",
+            "default": false,
+            "dependencies": [
+                {
+                    "package": "FirstCoursePackage",
+                    "versionNumber": "0.1.0.LATEST"
+                }
+            ],
+            "package": "LayoutPackage",
+            "versionName": "ver 0.1",
+            "versionNumber": "0.1.0.NEXT"
+        }
+    ],
+    "namespace": "alm007",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "50.0",
+    "packageAliases": {
+        "FirstCoursePackage": "0Ho2w000000kA09CAE",
+        "FirstCoursePackage@0.1.0-1": "04t2w000009F5yYAAS",
+        "FirstCoursePackage@0.1.0-2": "04t2w000009F5ydAAC",
+        "FirstCoursePackage@0.1.0-3": "04t2w000009F5ynAAC",
+        "FirstCoursePackage@0.1.0-4": "04t2w000009F5yxAAC",
+        "LayoutPackage": "0Ho2w000000kA0ECAU",
+        "FirstCoursePackage@0.1.0-5": "04t2w000009F5z7AAC",
+        "LayoutPackage@0.1.0-1": "04t2w000009F5zCAAS",
+        "LayoutPackage@0.1.0-2": "04t2w000009F5zHAAS"
+    }
+}
