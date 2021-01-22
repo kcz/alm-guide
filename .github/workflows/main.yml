@@ -41,6 +41,10 @@ jobs:
       - name: Pushing source
         run: sfdx force:source:push -f
 
+      #Setup LWC Test in our scratch org
+      - name: Setup LWC Test
+        run: sfdx force:lightning:lwc:test:setup
+
       #Run all LWC tests in our scratch org
       - name: Running LWC Tests
         run: sfdx force:lightning:lwc:test:run
