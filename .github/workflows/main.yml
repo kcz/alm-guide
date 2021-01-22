@@ -41,11 +41,11 @@ jobs:
       - name: Pushing source
         run: sfdx force:source:push -f
 
-      #Setup LWC Test in our scratch org
+      #Setup LWC Test
       - name: Setup LWC Test
         run: sfdx force:lightning:lwc:test:setup
 
-      #Run all LWC tests in our scratch org
+      #Run all LWC tests
       - name: Running LWC Tests
         run: sfdx force:lightning:lwc:test:run
 
@@ -76,7 +76,7 @@ jobs:
 
       #Sets the default devhub org for us to create scratch orgs and packages against
       - name: Set Default DevHub
-        run: sfdx force:config:set defaultdevhubusername=anthony.wheeler@sfdx.course.com
+        run: sfdx force:config:set defaultdevhubusername=${{ secrets.DEVHUB_USER_NAME }}
 
       # Generates new Package Version Number based on the last released version of the package
       - name: Creating Package Version
