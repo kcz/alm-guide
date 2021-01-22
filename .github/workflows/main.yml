@@ -43,7 +43,7 @@ jobs:
 
       #Run all LWC tests in our scratch org
       - name: Running LWC Tests
-        run: sfdx force:lightning:lwc:test:run -w 30
+        run: sfdx force:lightning:lwc:test:run
 
       #Run all Apex tests in our scratch org
       - name: Running Apex Tests
